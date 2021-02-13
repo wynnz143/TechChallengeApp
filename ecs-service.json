@@ -1,0 +1,14 @@
+{
+    "cluster": "techchellengeapp-cluster",
+    "serviceName": "techchallengeapp-repo",
+    "taskDefinition": "techchallengeapp-repo",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-2:128554366188:targetgroup/circleci-demo-target/7a2e30d47d7ad532",
+            "containerName": "techchallengeapp-repo",
+            "containerPort": 8080
+        }
+    ],
+    "desiredCount": 1,
+    "role": "ecsServiceRole"
+}
