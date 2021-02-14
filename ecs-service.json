@@ -1,11 +1,11 @@
 {
-    "cluster": "techchellengeapp-cluster",
-    "serviceName": "techchallengeapp-repo",
-    "taskDefinition": "techchallengeapp-repo",
+    "cluster": "techchallengeapp-cluster",
+    "serviceName": "techchallengeapp-service",
+    "taskDefinition": "techchallengeapp-task",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-2:128554366188:targetgroup/circleci-demo-target/7a2e30d47d7ad532",
-            "containerName": "techchallengeapp-repo",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-2:128554366188:targetgroup/techchallengeapp-target-group/5b010d7df5b76fc8",
+            "containerName": "techchallengeapp-service",
             "containerPort": 8080
         }
     ],
